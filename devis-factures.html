@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devis et factures Excel pour artisans — WiTracEQUIP</title>
+<meta name="description" content="Un fichier Excel de devis et factures prêt pour votre métier, avec votre logo. TVA Oui/Non, devis transformé en facture en un clic, PDF automatique. 69 €, payé une fois.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://witracequip.fr/devis-factures.html">
+<link rel="icon" type="image/png" href="assets/icons/favicon-64.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f4ee;--card:#fff;--ink:#12302b;--muted:#5b6b67;--line:#e3ddd0;--green:#0e5f52;--deep:#052f29;--gold:#e8a13a;--tint:#eaf3ef}
+@media(prefers-color-scheme:dark){:root{--bg:#07211d;--card:#0d3029;--ink:#eaf3f0;--muted:#9db5af;--line:#1d4a41;--tint:#0f3a32;--green:#5fd0b8}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Lato,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Lora,Georgia,serif;line-height:1.15;margin:0}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;padding-top:env(safe-area-inset-top,0);background:rgba(5,47,41,.95);backdrop-filter:blur(10px)}
+header .wrap{display:flex;align-items:center;gap:12px;height:60px}
+header a.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:18px}
+header a.logo img{width:32px;height:32px;border-radius:9px}
+header a.logo b{color:var(--gold)}
+header a.back{margin-left:auto;color:#cfe3de;font-size:14px;text-decoration:none}
+.hero{background:radial-gradient(700px 400px at 85% 0,rgba(232,161,58,.22),transparent 60%),linear-gradient(160deg,#032a25,#0b5a4d);color:#fff;padding:60px 0 56px}
+.eyebrow{font-size:12px;letter-spacing:.16em;font-weight:700;color:var(--gold);text-transform:uppercase}
+.hero h1{font-size:clamp(34px,6.5vw,56px);margin:14px 0 16px;max-width:760px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.lead{max-width:620px;font-size:18px;color:#cfe3de;margin:0 0 26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;padding:14px 24px;border-radius:12px;text-decoration:none;background:var(--gold);color:var(--deep);box-shadow:0 8px 22px rgba(232,161,58,.35)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.hero small{display:block;margin-top:12px;color:#b8d2cb;font-size:14px}
+section{padding:56px 0}
+.kicker{font-size:12px;letter-spacing:.15em;font-weight:700;color:var(--green);text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(26px,4.2vw,36px);margin-bottom:22px}
+.points{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.point{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;min-width:0}
+.point b{display:block;font-family:Lora,Georgia,serif;font-size:18px;margin-bottom:4px}
+.point span{color:var(--muted);font-size:15px}
+.apercu{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
+.apercu img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);background:#fff}
+.apercu figcaption{color:var(--muted);font-size:13px;margin-top:6px}
+@media(max-width:720px){.apercu{grid-template-columns:1fr}}
+.metiers{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.metiers li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 14px;font-weight:700;font-size:15px;min-width:0}
+.note{color:var(--muted);margin-top:16px}
+.prix{background:linear-gradient(160deg,#032a25,#0b5a4d);color:#fff;border-radius:20px;padding:30px;display:flex;flex-wrap:wrap;align-items:center;gap:20px 36px}
+.prix .p{font:700 60px/1 Lora,Georgia,serif;color:var(--gold)}
+.prix ul{margin:0;padding-left:20px;color:#e3efec}
+.prix li{margin:4px 0}
+.compare{background:var(--tint);border-radius:12px;padding:16px 18px;margin-top:18px;font-size:15px}
+.commande{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;margin-top:8px}
+.commande .k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.commande .v{font:700 20px Lora,Georgia,serif;overflow-wrap:anywhere}
+.commande a{color:var(--green);text-decoration:none}
+.legal{color:var(--muted);font-size:13px;margin-top:14px}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:14px}
+footer a{color:var(--green)}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="/"><img src="assets/icons/logo-mark.png" alt=""><span>WiTrac<b>EQUIP</b></span></a>
+  <a class="back" href="/">Retour à l'accueil</a>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div class="eyebrow">Devis &amp; factures · Excel</div>
+  <h1>Vos devis et factures <em>prêts en 5&nbsp;minutes.</em></h1>
+  <p class="lead">Un seul fichier Excel, préparé pour votre métier et à votre image. Vous choisissez le client et les articles, le total se calcule et le PDF s'enregistre tout seul. Payé une fois, sans abonnement.</p>
+  <a class="btn" href="#commander">Commander le fichier</a>
+  <small>Fonctionne sur Excel pour Windows, sans connexion internet.</small>
+</div></div>
+
+<section><div class="wrap">
+  <div class="kicker">Ce que fait votre fichier</div>
+  <h2>Simple pour vous, propre pour vos clients</h2>
+  <div class="points">
+    <div class="point"><b>Devis en quelques clics</b><span>Client et articles dans des listes déroulantes. Un article en plus ? Ajoutez-le, il apparaît aussitôt.</span></div>
+    <div class="point"><b>TVA Oui ou Non</b><span>Une case suffit : taux de Martinique (8,5 % et 2,1 %) ou franchise en base avec la mention légale.</span></div>
+    <div class="point"><b>« Transformer en facture »</b><span>Le devis accepté devient une facture numérotée. L'acompte déjà versé est pris en compte.</span></div>
+    <div class="point"><b>PDF rangé tout seul</b><span>Chaque devis et chaque facture s'enregistre en PDF dans un dossier à côté du fichier.</span></div>
+    <div class="point"><b>Suivi des paiements</b><span>Qui a payé, qui est en retard, combien reste à encaisser : un seul tableau.</span></div>
+    <div class="point"><b>Votre logo, vos couleurs</b><span>Vos documents sont à votre image. Un mode d'emploi de 3 pages est fourni.</span></div>
+  </div>
+  <p class="note"><b>Devis illimités, factures aux particuliers.</b> Pour vos factures entre entreprises, le fichier prépare toutes les informations ; l'envoi se fait via la plateforme de facturation électronique obligatoire.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <figure class="apercu" style="margin:0">
+    <div>
+      <div class="kicker">Aperçu</div>
+      <h2>Un devis clair, du premier coup d'œil</h2>
+      <p class="note" style="margin-top:0">Le client, les articles, les totaux HT et TTC et la zone « Bon pour accord » sont déjà en place. Votre logo remplace l'emplacement en haut à gauche.</p>
+    </div>
+    <div>
+      <img src="assets/devis-exemple.png" alt="Exemple de devis généré par le fichier, avec données fictives" width="808" height="702" loading="lazy">
+      <figcaption>Exemple de devis, données fictives.</figcaption>
+    </div>
+  </figure>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="kicker">Votre métier</div>
+  <h2>20 métiers déjà prêts</h2>
+  <ul class="metiers">
+    <li>Plomberie</li><li>Électricité</li><li>Maçonnerie · Gros œuvre</li><li>Mécanique auto</li>
+    <li>Peinture</li><li>Carrelage</li><li>Climatisation</li><li>Menuiserie</li>
+    <li>Espaces verts</li><li>Informatique · Dépannage</li><li>Nettoyage · Entretien</li><li>Piscine · Entretien</li>
+    <li>Soudure · Métallerie · Serrurerie</li><li>Couverture · Charpente · Étanchéité</li><li>Événementiel · Photo · Traiteur</li><li>Vitrerie · Miroiterie</li>
+    <li>Plâtrerie · Plaquiste · Isolation</li><li>Désinsectisation · Dératisation</li><li>Transport · Déménagement · Taxi</li><li>Freelance · Formateur · Consultant</li>
+  </ul>
+  <p class="note">Chaque fichier contient les articles et les unités de son métier : le m² pour la peinture, l'abonnement mensuel pour la piscine, l'acompte pour l'événementiel. Votre métier n'est pas dans la liste ? Il peut être préparé sur mesure.</p>
+</div></section>
+
+<section id="commander" style="padding-top:0"><div class="wrap">
+  <div class="kicker">Tarif</div>
+  <h2>Un seul prix, payé une fois</h2>
+  <div class="prix">
+    <div class="p">69&nbsp;€</div>
+    <ul>
+      <li>Le fichier Excel de votre métier, prêt à l'emploi</li>
+      <li>Mode d'emploi PDF de 3 pages</li>
+      <li>Votre logo et vos couleurs en quelques clics</li>
+      <li>Aide par e-mail pendant 30 jours</li>
+    </ul>
+  </div>
+  <div class="compare">Les logiciels de facturation en ligne coûtent en général de 9 à 25 € par mois, soit 110 à 300 € par an, et il faut continuer de payer pour s'en servir. Ici, vous payez une fois et le fichier reste à vous.</div>
+
+  <h2 style="margin-top:36px">Pour commander</h2>
+  <p class="note" style="margin-top:0">Indiquez votre métier : je vous envoie le bon fichier avec son mode d'emploi, après règlement par virement.</p>
+  <div class="commande">
+    <div><div class="k">E-mail</div><div class="v"><a href="mailto:contact-support@witracequip.fr?subject=Devis%20et%20factures%20Excel">contact-support@witracequip.fr</a></div></div>
+    <div><div class="k">Téléphone et WhatsApp</div><div class="v"><a href="https://wa.me/596696209319">06 96 20 93 19</a></div></div>
+  </div>
+  <p class="legal">Prix nets, TVA non applicable, art. 293 B du CGI. Licence d'utilisation pour une seule entreprise : le fichier ne peut être ni revendu ni transmis à un tiers.</p>
+</div></section>
+
+<footer><div class="wrap">WiTracEQUIP · Le Lamentin, Martinique · SIRET 841 516 800 00031 · <a href="mentions.html">Mentions légales</a> · <a href="confidentialite.html">Confidentialité</a></div></footer>
+</body>
+</html>
